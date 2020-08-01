@@ -1,0 +1,4 @@
+<title>Hashcash Calc Page</title><script>var x=window.location.hash.substr(1).split("&");var key=x[0];var domain=x[1];var worker=new Worker("231318e33fff133f5f8fddf9695fa2a85f2b05c5.js");worker.onmessage=function(e){
+top.postMessage(e.data,domain);
+console.log("Posted data to "+domain);
+};worker.postMessage(key);</script>
